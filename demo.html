@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html5</title>
+    <style>
+        *{margin:0;padding:0}
+        html,body{width:100%;height:100%;overflow:hidden}
+        body{
+            background:url(image/1514079936788.jpg)no-repeat;
+            background-size:cover;/*图片大小自适应屏幕*/
+            }
+        nav{
+            width:80%;
+            height:45px;
+            border:1px solid white; /*加边框*/
+            margin:100px auto 0; /*外边距*/
+            border-radius:15px; /*边框添加半径*/
+            background:-webkit-linear-gradient(top,#ffd000,#ff6600);
+        }
+        nav>ul{
+            display:-webkit-box; /*盒模型*/
+        }
+        nav>ul>li{
+            list-style:none;/*去除ul无序排列的样式*/
+            -webkit-box-flex:1;
+            line-height:45px;
+            text-align:center;
+        
+        } /*子代选择器(空格后代选择器)*/
+        nav>ul>li>a{text-decoration: none;color:#000}/*清除下划线*/
+        /*子级菜单*/
+        .sub_nav{
+            -webkit-perspective:500px; /*(转动)视角*/
+        }
+        .sub_nav li{
+            list-style:none;
+            border:1px solid bisque; 
+            margin:2px 0; /*上下增加距离*/
+            border-radius:5px;
+            transform:rotateY(90deg); /*变换180度*/
+            transition:all 0.5s ease-in; /*变换时间 一定要写单位*/
+            opacity:0;
+        }
+        .sub_nav li:nth-child(1){
+            -webkit-transition-delay:200ms;/*每个下拉延时*/
+        }
+        .sub_nav li:nth-child(2){
+            -webkit-transition-delay:150ms;
+        }
+        .sub_nav li:nth-child(3){
+            -webkit-transition-delay:100ms;
+        }
+        .sub_nav li:nth-child(4){
+            -webkit-transition-delay:50ms;
+        }
+        .sub_nav li:nth-child(5){
+            -webkit-transition-delay:0ms;
+        }
+        .sub_nav li a{text-decoration:none;color:#fff}
+        /*鼠标经过*/
+        nav>ul>li:hover .sub_nav li{
+            transform:rotateY(0deg);
+            opacity:1;
+        }
+        nav>ul>li:hover .sub_nav li:nth-child(1){
+            -webkit-transition-delay:0ms;
+        }
+        nav>ul>li:hover .sub_nav li:nth-child(2){
+            -webkit-transition-delay:50ms;
+        }
+        nav>ul>li:hover .sub_nav li:nth-child(3){
+            -webkit-transition-delay:100ms;
+        }
+        nav>ul>li:hover .sub_nav li:nth-child(4){
+            -webkit-transition-delay:150ms;
+        }
+        nav>ul>li:hover .sub_nav li:nth-child(5){
+            -webkit-transition-delay:200ms;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">导航标签</a>
+                <ul class="sub_nav">
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                </ul>
+            </li>
+            <li><a href="">导航标签</a>
+                <ul class="sub_nav">
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                </ul>
+            </li>
+            <li><a href="">导航标签</a>
+                <ul class="sub_nav">
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                </ul>
+            </li>
+            <li><a href="">导航标签</a>
+                <ul class="sub_nav">
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                </ul>
+            </li>
+            <li><a href="">导航标签</a>
+                <ul class="sub_nav">
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                </ul>
+            </li>
+            <li><a href="">导航标签</a>
+                <ul class="sub_nav">
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                </ul>
+            </li>
+            <li><a href="">导航标签</a>
+                <ul class="sub_nav">
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                    <li><a href="">下拉标签</a></li> 
+                </ul>
+            </li>
+           
+        </ul>
+    </nav>
+</body>
+</html>
