@@ -1,37 +1,114 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HTML5 Canvas气泡网页背景动画特效</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5</title>
 
-<style>
-	body, html {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
+	<style>
+		body,
+		html {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			/* background:-webkit-linear-gradient(top,#ffd000,#ff6600); */
+			margin: 0;
+			padding: 0;
+		}
 
-		margin: 0;
-		padding: 0;
-	}
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
+		#background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			
+			z-index: -100;
+		}
+	</style>
 
-		z-index: -100;
-	}
-</style>
+	<link rel="stylesheet" href="css/login.css">
+
 
 </head>
-<body>
+
+
+
+<body class="session-authentication">
+
+
+
+
+	<div class="auth-form px-3" id="login">
+
+
+
+		<form accept-charset="UTF-8" action="/session" method="post">
+			<div style="margin:0;padding:0;display:inline">
+
+			</div>
+			<div class="auth-form-header p-0">
+				<h1>管理系统</h1>
+			</div>
+
+
+		
+
+
+			<div class="auth-form-body mt-3">
+
+				<label for="login_field">
+					用户名
+				</label>
+				<input autocapitalize="off" autocorrect="off" autofocus="autofocus" class="form-control input-block" id="login_field" name="login"
+				 tabindex="1" type="text" />
+
+				<label for="password">
+					密码
+					<a href=" " class="label-link">忘记密码?</a>
+				</label>
+				<input class="form-control input-block" id="password" name="password" tabindex="2" type="password" />
+
+				<input class="btn btn-primary btn-block" data-disable-with="Signing in…" name="commit" tabindex="3" type="submit" value="登 陆"
+				/>
+			</div>
+		</form>
+
+		<p class="create-account-callout mt-3">
+			这里
+			<a href="  " data-ga-click="Sign in">注册一个新的用户</a>.
+		</p>
+	</div>
+
+	</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+</body>
+
+</html>
+
+
 
 <canvas id="background"></canvas>
 
 <script async type="text/javascript" src="js/background.js"></script>
 
 </body>
+
 </html>

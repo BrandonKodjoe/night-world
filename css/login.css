@@ -1,0 +1,282 @@
+.mt-3 {
+	margin-top: 16px !important
+}
+.px-3 {
+	padding-right: 16px !important;
+	padding-left: 16px !important
+}
+.p-0 {
+	padding: 0 !important
+}
+/*验证主框体样式*/
+.session-authentication {
+	background-color: #f9f9f9
+}
+
+.session-authentication .auth-form-header {
+	margin-bottom: 15px;
+	color: #333;
+	text-align: center;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0
+}
+.session-authentication .auth-form-header h1 {
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: -0.5px
+}
+
+.session-authentication .auth-form-body {
+	border-top: 1px solid #d8dee2;
+	border-radius: 5px
+}
+
+.session-authentication .auth-form label {
+	display: block;
+	margin-bottom: 7px
+}
+
+.session-authentication .auth-form .btn {
+	margin-top: 20px
+}
+
+
+.session-authentication .create-account-callout {
+	padding: 15px 20px;
+	text-align: center;
+	border: 1px solid #d8dee2;
+	border-radius: 5px
+}
+.session-authentication .label-link {
+	float: right;
+	font-size: 12px
+}
+
+/*框架格式*/
+.auth-form {
+	width: 340px;
+	margin: 0 auto
+}
+
+
+.auth-form-body {
+	padding: 20px;
+	font-size: 14px;
+    /* background-color: #fff; */
+	border: 1px solid #d8dee2;
+	border-top: 0;
+	border-radius: 0 0 3px 3px
+}
+
+.auth-form-body .input-block {
+	margin-top: 5px;
+	margin-bottom: 15px
+}
+
+.auth-form-body p {
+	margin: 10px 0
+}
+
+.auth-form-body ol,.auth-form-body ul {
+	padding-left: inherit;
+	margin-bottom: inherit
+}
+
+
+/*表格样式(含input)*/
+
+
+.form-control,.form-select {
+	min-height: 22px;
+	padding: 6px 0;
+	font-size: 14px;
+	line-height: 20px;
+	color: #24292e;
+	vertical-align: middle;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right 8px center;
+	border: 1px solid #d1d5da;
+	border-radius: 3px;
+	outline: none;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075);
+    opacity:0.8;
+}
+.form-control.focus,.form-control:focus,.form-select.focus,.form-select:focus {
+	border-color: #2188ff;
+	outline: none;
+	box-shadow: inset 0 1px 2px rgba(27,31,35,0.075),0 0 0 0.2em rgba(3,102,214,0.3)
+}
+.input-block {
+	display: block;
+	width: 100%
+}
+
+/*lable*/
+.label-link {
+	border: 1px solid transparent
+}
+
+.label-link:hover {
+	text-decoration: none
+}
+/*按钮样式*/
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-repeat: repeat-x;
+	background-position: -1px -1px;
+	background-size: 110% 110%;
+	border: 1px solid rgba(27,31,35,0.2);
+	border-radius: 0.25em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none
+}
+
+.btn i {
+	font-style: normal;
+	font-weight: 500;
+	opacity: 0.6
+}
+
+.btn .octicon {
+	vertical-align: text-top
+}
+
+.btn .Counter {
+	color: #586069;
+	text-shadow: none;
+	background-color: rgba(27,31,35,0.1)
+}
+
+.btn:hover {
+	text-decoration: none;
+	background-repeat: repeat-x
+}
+
+.btn:focus {
+	outline: 0
+}
+
+.btn:disabled,.btn.disabled {
+	cursor: default;
+	background-position: 0 0
+}
+
+.btn:active,.btn.selected {
+	background-image: none
+}
+
+.btn {
+	color: #24292e;
+	background-color: #eff3f6;
+	background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)
+}
+
+.btn:focus,.btn.focus {
+	box-shadow: 0 0 0 0.2em rgba(3,102,214,0.3)
+}
+
+.btn:hover,.btn.hover {
+	background-color: #e6ebf1;
+	background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+	background-position: 0 -0.5em;
+	border-color: rgba(27,31,35,0.35)
+}
+
+.btn:active,.btn.selected,[open]>.btn {
+	background-color: #e9ecef;
+	background-image: none;
+	border-color: rgba(27,31,35,0.35);
+	box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,0.15)
+}
+
+.btn:disabled,.btn.disabled {
+	color: rgba(36,41,46,0.4);
+	background-color: #eff3f6;
+	background-image: none;
+	border-color: rgba(27,31,35,0.2);
+	box-shadow: none
+}
+
+
+.btn-primary {
+	color: #fff;
+	background-color: #28a745;
+	background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%)
+}
+
+.btn-primary:focus,.btn-primary.focus {
+	box-shadow: 0 0 0 0.2em rgba(52,208,88,0.3)
+}
+
+.btn-primary:hover,.btn-primary.hover {
+	background-color: #269f42;
+	background-image: linear-gradient(-180deg, #2fcb53 0%, #269f42 90%);
+	background-position: 0 -0.5em;
+	border-color: rgba(27,31,35,0.5)
+}
+
+.btn-primary:active,.btn-primary.selected,[open]>.btn-primary {
+	background-color: #279f43;
+	background-image: none;
+	border-color: rgba(27,31,35,0.5);
+	box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,0.15)
+}
+
+.btn-primary:disabled,.btn-primary.disabled {
+	color: rgba(255,255,255,0.75);
+	background-color: #94d3a2;
+	background-image: none;
+	border-color: rgba(27,31,35,0.2);
+	box-shadow: none
+}
+
+.btn-primary .Counter {
+	color: #29b249;
+	background-color: #fff
+}
+
+.btn-block {
+	display: block;
+	width: 100%;
+	text-align: center
+}
+/*主体元素样式*/
+
+body {
+	margin: 0
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 14px;
+	line-height: 1.5;
+	color: #24292e;
+	background-color: #fff
+}
+
+button,input,select,textarea {
+	font: inherit;
+	margin: 0
+}
+
+
+input{
+    border:none;
+    width:100%;
+    }
+
+
