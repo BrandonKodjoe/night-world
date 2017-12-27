@@ -25,10 +25,18 @@
 			position: fixed;
 			top: 0;
 			left: 0;
-			background:-webkit-linear-gradient(top,#1e08df,#0942ac);
+			background:-webkit-linear-gradient(top,#1e08df,#020a18);
 			z-index: -100;
-			opacity:0.6
-		}
+			opacity:0.8;
+			filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+    
+			-webkit-filter: blur(10px); /* Chrome, Opera */
+			-moz-filter: blur(10px);
+				-ms-filter: blur(10px);    
+					filter: blur(10px);
+			
+			filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+				}
 	</style>
 
 	<link rel="stylesheet" href="css/login.css">
