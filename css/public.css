@@ -19,15 +19,8 @@ textarea {
 	outline: 0
 }
 
-img {
-	max-width: 100%
-}
 
-img,
-input {
-	border: 0;
-	vertical-align: top
-}
+
 
 a {
 	color: #85888e;
