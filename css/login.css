@@ -15,7 +15,8 @@
 
 .session-authentication .auth-form-header {
 	margin-bottom: 15px;
-	color: #333;
+	/* color: #333; */
+	color:#fff;
 	text-align: center;
 	text-shadow: none;
 	background-color: transparent;
@@ -50,7 +51,9 @@
 }
 .session-authentication .label-link {
 	float: right;
-	font-size: 12px
+	font-size: 12px;
+	text-decoration: none;
+	color:rgb(67, 93, 211)
 }
 
 /*框架格式*/
@@ -59,6 +62,13 @@
 	margin: 0 auto
 }
 
+.auth-form-top{
+	display:flex;
+	justify-content:space-between;
+	margin:0px 50px;
+	font-size:24px;
+	color:#fff;
+}
 
 .auth-form-body {
 	padding: 20px;
@@ -120,6 +130,11 @@
 
 .label-link:hover {
 	text-decoration: none
+}
+
+.label-link-foot{
+	text-decoration: none;
+	color:rgb(67, 93, 211)
 }
 /*按钮样式*/
 .btn {
